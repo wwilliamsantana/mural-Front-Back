@@ -1,8 +1,10 @@
 const express = require('express')
 const app = express()
+const path = require('path')
 const { v4: uuidV4 } = require('uuid')
 
 app.use(express.json())
+app.use(express.static(path.join(__dirname, 'public')))
 
 let posts = []
 
