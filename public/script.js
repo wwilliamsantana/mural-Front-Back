@@ -15,7 +15,7 @@ function update() {
                        <h5 class="card-title">${post.title}</h5>
                        <p class="card-text">${post.description}</p>
                     </div>
-                 <div class="card-footer text-muted">Atual: ${post.date}</div>
+                 <div class="card-footer text-muted">${post.date}</div>
                </div>`
       })
       document.getElementById('cards').innerHTML += posts
